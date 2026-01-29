@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\multipliergate\\assets\\scriptableobject\\player\\gamesettingsinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptableobject\\player\\gamesettingsinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\multipliergate\\assets\\scripts\\scriptableobject\\playerdataso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobject\\playerdataso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\installer\\gameinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installer\\gameinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameSettingsInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\ScriptableObject\\Player\\GameSettingsInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\ScriptableObject\\Player\\GameSettingsInstaller.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\ScriptableObject\\Player\\GameSettingsInstaller.cs",
+              "RelativeToolTip": "Assets\\ScriptableObject\\Player\\GameSettingsInstaller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T16:46:38.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerDataSO.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\ScriptableObject\\PlayerDataSO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObject\\PlayerDataSO.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\ScriptableObject\\PlayerDataSO.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ScriptableObject\\PlayerDataSO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T16:42:39.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T16:22:24.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Installer\\GameInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Installer\\GameInstaller.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Installer\\GameInstaller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Installer\\GameInstaller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T16:38:55.406Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
