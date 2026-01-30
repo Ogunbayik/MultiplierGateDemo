@@ -3,6 +3,7 @@ using Zenject;
 
 public class GameInstaller : MonoInstaller
 {
+    
     public override void InstallBindings()
     {
         Container.Bind<IInputService>().To<InputKeyboard>().AsSingle();

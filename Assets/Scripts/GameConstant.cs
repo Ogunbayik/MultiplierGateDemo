@@ -9,5 +9,9 @@ public static class GameConstant
         public const string HORIZONTAL = "Horizontal";
         public const string VERTICAL = "Vertical";
     }
+    public class PoolGroups
+    {
+        public const string BULLETS = "BulletsPool";
+    }
 
 }

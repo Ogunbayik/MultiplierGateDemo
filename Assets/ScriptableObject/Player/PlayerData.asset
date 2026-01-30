@@ -17,3 +17,10 @@ MonoBehaviour:
   _maxXConstraint: 5
   _minZConstraint: 0
   _maxZConstraint: 3
+  _attackOffset: {x: 0, y: 1, z: 1}
+  _bulletCount: 5
+  _bulletDamage: 1
+  _bulletSpeed: 5
+  _bulletLifeTime: 2
+  _fireRate: 0.5
+  _reloadTime: 2
