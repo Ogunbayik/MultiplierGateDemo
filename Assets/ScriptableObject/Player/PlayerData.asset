@@ -24,3 +24,6 @@ MonoBehaviour:
   _bulletLifeTime: 2
   _fireRate: 0.5
   _reloadTime: 2
+  _frontRowSpacing: 1.5
+  _backRowSpacing: 0.75
+  _travelDuration: 1

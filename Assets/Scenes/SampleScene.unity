@@ -248,6 +248,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b2956962e5ee248bff623fc00279fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _initialCount: 1
+  _frontXRange: 0
+  _backXRange: 0
+  _xRange: 0
 --- !u!114 &552243010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,7 +673,7 @@ MonoBehaviour:
   _bulletSize: 20
   _bulletRoot: {fileID: 1000982561}
   _soldierPrefab: {fileID: 5040193412674500544, guid: 98bd959ae2849d54e875952e675e61a0, type: 3}
-  _soldierSize: 5
+  _soldierSize: 7
   _soldierRoot: {fileID: 1805679618}
 --- !u!1 &1805679617
 GameObject:

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\player\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\player\\playersquadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playersquadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\scriptableobject\\playerdataso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\multipliergate\\assets\\scripts\\scriptableobject\\playerdataso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobject\\playerdataso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\multipliergate\\assets\\scripts\\installer\\playerinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\installer\\playerinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installer\\playerinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\player\\playersquadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playersquadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\player\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -48,9 +48,22 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObject\\PlayerDataSO.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\ScriptableObject\\PlayerDataSO.cs",
               "RelativeToolTip": "Assets\\Scripts\\ScriptableObject\\PlayerDataSO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAA9wCkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T16:42:39.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerSquadManager.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Player\\PlayerSquadManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerSquadManager.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Player\\PlayerSquadManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerSquadManager.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAswA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T11:56:45.834Z",
               "EditorCaption": ""
             },
             {
@@ -63,21 +76,19 @@
               "RelativeToolTip": "Assets\\Scripts\\Installer\\PlayerInstaller.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwBQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T18:02:39.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T18:02:39.823Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Soldier.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Player\\Soldier.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Soldier.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Player\\Soldier.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Soldier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T18:05:26.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T18:05:26.672Z"
             },
             {
               "$type": "Document",
@@ -89,8 +100,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAmwBUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T11:34:23.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T11:34:23.906Z"
             },
             {
               "$type": "Document",
@@ -102,21 +112,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAkwCUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T13:11:47.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerSquadManager.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Player\\PlayerSquadManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerSquadManager.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Player\\PlayerSquadManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerSquadManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwB4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T11:56:45.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T13:11:47.536Z"
             },
             {
               "$type": "Document",
