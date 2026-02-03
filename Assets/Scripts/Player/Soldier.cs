@@ -51,6 +51,5 @@ public class Soldier : MonoBehaviour, IPoolable<IMemoryPool>
     {
         _pool = null;
     }
-
     public class Pool : MonoPoolableMemoryPool<IMemoryPool, Soldier> { }
 }

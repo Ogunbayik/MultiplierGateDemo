@@ -6,20 +6,24 @@ using DG.Tweening;
 
 public class PlayerSquadManager : MonoBehaviour
 {
+    private SignalBus _signalBus;
+
     private Soldier.Pool _soldierPool;
 
     private List<Soldier> _activeSoldierList = new List<Soldier>();
     private PlayerDataSO _data;
 
     public int _initialCount;
+    private int _currentCount;
 
     private Vector3 _desiredPosition;
 
     [Inject]
-    public void Construct(Soldier.Pool soldierPool,PlayerDataSO data)
+    public void Construct(Soldier.Pool soldierPool,PlayerDataSO data, SignalBus signalBus)
     {
         _soldierPool = soldierPool;
         _data = data;
+        _signalBus = signalBus;
     }
 
     private void Start() => InitialSquad();
@@ -29,25 +33,32 @@ public class PlayerSquadManager : MonoBehaviour
         {
             var soldier = _soldierPool.Spawn(_soldierPool);
             _activeSoldierList.Add(soldier);
+            _currentCount = _initialCount;
         }
     }
-    private void Update()
+    private void OnEnable()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            IncreaseSoldier(1);
-        }
+        _signalBus.Subscribe<GameSignal.PlayerTriggeredGateSignal>(IncreaseSoldierCount);
+    }
+    private void OnDisable()
+    {
+        _signalBus.Unsubscribe<GameSignal.PlayerTriggeredGateSignal>(IncreaseSoldierCount);
+    }
 
-        if (Input.GetKeyDown(KeyCode.Q))
-            RelocateSoldiers();
-    }
-    private void IncreaseSoldier(int soldierCount)
+    private void IncreaseSoldierCount(GameSignal.PlayerTriggeredGateSignal signal)
     {
-        for (int i = 0; i < soldierCount; i++)
+        var value = signal.Gate.CalculateValue(signal.Gate.Type, _currentCount);
+
+        for (int i = 0; i < value; i++)
         {
             var soldier = _soldierPool.Spawn(_soldierPool);
             _activeSoldierList.Add(soldier);
         }
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+            RelocateSoldiers();
     }
     private void RelocateSoldiers()
     {

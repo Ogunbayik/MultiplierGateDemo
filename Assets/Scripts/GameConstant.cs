@@ -13,5 +13,12 @@ public static class GameConstant
     {
         public const string BULLETS = "BulletsPool";
     }
-
+    public class Tag
+    {
+        public const string PLAYER = "Player";
+    }
+    public class Timers
+    {
+        public const float GATE_DESTROY_TIME = 0.1f;
+    }
 }
