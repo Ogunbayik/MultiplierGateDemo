@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\multipliergate\\assets\\scripts\\gate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\multipliergate\\assets\\scripts\\player\\playersquadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playersquadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\gate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\player\\playersquadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playersquadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\gameconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\installer\\playerinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installer\\playerinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\multipliergate\\assets\\scripts\\gameconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CAF9EDE-ECE8-F227-4C99-78CC1BE451F2}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,50 +38,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PlayerSquadManager.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Player\\PlayerSquadManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerSquadManager.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Player\\PlayerSquadManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerSquadManager.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAswDgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-30T11:56:45.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "GameConstant.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\GameConstant.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameConstant.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\GameConstant.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameConstant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T16:12:13.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Gate.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Gate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Gate.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Gate.cs",
               "RelativeToolTip": "Assets\\Scripts\\Gate.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwDYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T14:53:18.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlayerInstaller.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Installer\\PlayerInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Installer\\PlayerInstaller.cs",
@@ -100,7 +100,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Soldier.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Player\\Soldier.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Soldier.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwDAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T18:05:26.672Z",
               "EditorCaption": ""
@@ -113,7 +113,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObject\\PlayerDataSO.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\ScriptableObject\\PlayerDataSO.cs",
               "RelativeToolTip": "Assets\\Scripts\\ScriptableObject\\PlayerDataSO.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAA7wCkAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwCkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T16:42:39.8Z",
               "EditorCaption": ""
@@ -126,7 +126,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\MultiplierGate\\Assets\\Scripts\\Bullet.cs",
               "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwCQAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-30T11:34:23.906Z",
               "EditorCaption": ""

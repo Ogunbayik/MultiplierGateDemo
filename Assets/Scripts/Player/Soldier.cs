@@ -7,8 +7,9 @@ using Cysharp.Threading.Tasks;
 
 public class Soldier : MonoBehaviour, IPoolable<IMemoryPool>
 {
-    private PlayerController _playerController;
     private IMemoryPool _pool;
+   
+    private PlayerController _playerController;
 
     private Bullet.Pool _bulletPool;
 
@@ -50,6 +51,10 @@ public class Soldier : MonoBehaviour, IPoolable<IMemoryPool>
     public void OnDespawned()
     {
         _pool = null;
+    }
+    public void ReturnToPool()
+    {
+        _pool.Despawn(this);
     }
     public class Pool : MonoPoolableMemoryPool<IMemoryPool, Soldier> { }
 }

@@ -22,7 +22,7 @@ public class PlayerDataSO : ScriptableObject
     [SerializeField] private float _reloadTime;
     [Header("Squad Even Settings")]
     [SerializeField] private float _frontRowSpacing;
-    [SerializeField] private float _backRowSpacing;
+    [SerializeField] private float _backRowSpacingEven;
     [SerializeField] private float _travelDuration;
     
 
@@ -40,7 +40,7 @@ public class PlayerDataSO : ScriptableObject
     public float FireRate => _fireRate;
     public float ReloadTime => _reloadTime;
     public float FrontRowSpacing => _frontRowSpacing;
-    public float BackRowSpacing => _backRowSpacing;
+    public float BackRowSpacing => _backRowSpacingEven;
     public float TravelDuration => _travelDuration;
 
 }

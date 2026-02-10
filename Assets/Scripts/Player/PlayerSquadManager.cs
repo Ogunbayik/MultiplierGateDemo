@@ -1,8 +1,12 @@
+using Cysharp.Threading.Tasks;
+using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using Zenject;
-using DG.Tweening;
+using static Gate;
 
 public class PlayerSquadManager : MonoBehaviour
 {
@@ -14,9 +18,10 @@ public class PlayerSquadManager : MonoBehaviour
     private PlayerDataSO _data;
 
     public int _initialCount;
-    private int _currentCount;
+    public int _maxSoldierCount;
 
     private Vector3 _desiredPosition;
+
 
     [Inject]
     public void Construct(Soldier.Pool soldierPool,PlayerDataSO data, SignalBus signalBus)
@@ -33,32 +38,74 @@ public class PlayerSquadManager : MonoBehaviour
         {
             var soldier = _soldierPool.Spawn(_soldierPool);
             _activeSoldierList.Add(soldier);
-            _currentCount = _initialCount;
         }
+
+        RelocateSoldiers();
     }
     private void OnEnable()
     {
-        _signalBus.Subscribe<GameSignal.PlayerTriggeredGateSignal>(IncreaseSoldierCount);
+        _signalBus.Subscribe<GameSignal.PlayerTriggeredGateSignal>(OnPlayerTriggerGate);
     }
     private void OnDisable()
     {
-        _signalBus.Unsubscribe<GameSignal.PlayerTriggeredGateSignal>(IncreaseSoldierCount);
+        _signalBus.Unsubscribe<GameSignal.PlayerTriggeredGateSignal>(OnPlayerTriggerGate);
     }
-
-    private void IncreaseSoldierCount(GameSignal.PlayerTriggeredGateSignal signal)
+    private void OnPlayerTriggerGate(GameSignal.PlayerTriggeredGateSignal signal) => UpdateSoldierSequence(signal).Forget();
+    private async UniTaskVoid UpdateSoldierSequence(GameSignal.PlayerTriggeredGateSignal signal)
     {
-        var value = signal.Gate.CalculateValue(signal.Gate.Type, _currentCount);
+        CancellationToken token = this.GetCancellationTokenOnDestroy();
+        //Ýlk önce duman efekti eklenecek..
+        Debug.Log("Smoke effect is activated!.. Effect time is 0.5f");
+        await UniTask.Delay(2000, cancellationToken: token);
+        //Sonra asker sayýsý hesaplanacak..
+        var targetCount = CalculateValue(signal.Gate.Type, signal.Gate.CurrentValue);
+        UpdateSoldierCount(targetCount);
+        await UniTask.Delay(2000, cancellationToken: token);
+        //En sonda da formasyon deðiþecek..
+        RelocateSoldiers();
+    }
+    private void UpdateSoldierCount(int targetAmount)
+    {
+        ResetSquadList();
 
-        for (int i = 0; i < value; i++)
+        for (int i = 0; i < targetAmount; i++)
+            CreateSoldier();
+    }
+    private int CalculateValue(GateType gateType, int gateValue)
+    {
+        int currentCount = _activeSoldierList.Count;
+        int result = 0;
+
+        switch(gateType)
         {
-            var soldier = _soldierPool.Spawn(_soldierPool);
-            _activeSoldierList.Add(soldier);
+            case GateType.Addition:
+                result = currentCount + gateValue;
+                break;
+            case GateType.Subtraction:
+                result = currentCount + gateValue;
+                break;
+            case GateType.Multiplication:
+                result = currentCount * gateValue;
+                break;
+            case GateType.Division:
+                result = currentCount / gateValue;
+                break;
         }
+
+        return Mathf.Clamp(result, GameConstant.Setting.MINIMUM_SOLDIER_COUNT, _maxSoldierCount);
     }
-    private void Update()
+    private void ResetSquadList()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-            RelocateSoldiers();
+        foreach (var soldier in _activeSoldierList)
+            soldier.ReturnToPool();
+
+        _activeSoldierList.Clear();
+    }
+    private void CreateSoldier()
+    {
+        var soldier = _soldierPool.Spawn(_soldierPool);
+        soldier.transform.localPosition = Vector3.zero;
+        _activeSoldierList.Add(soldier);
     }
     private void RelocateSoldiers()
     {
@@ -75,7 +122,7 @@ public class PlayerSquadManager : MonoBehaviour
                 else
                     _desiredPosition = new Vector3(-_data.BackRowSpacing, 0f, -offsetZ);
 
-                _activeSoldierList[i].transform.DOMove(_desiredPosition, _data.TravelDuration);
+                _activeSoldierList[i].transform.DOLocalMove(_desiredPosition, _data.TravelDuration);
             }
         }
         else
@@ -86,7 +133,7 @@ public class PlayerSquadManager : MonoBehaviour
                 //Ýlk Soldier
                 if (i == 0)
                 {
-                    _activeSoldierList[i].transform.position = Vector3.zero;
+                    _activeSoldierList[i].transform.localPosition = Vector3.zero;
                     continue;
                 }
 
@@ -110,7 +157,7 @@ public class PlayerSquadManager : MonoBehaviour
                         _desiredPosition = new Vector3(-_data.BackRowSpacing, 0f, -offsetZ);
                 }
 
-                _activeSoldierList[i].transform.DOMove(_desiredPosition, _data.TravelDuration);
+                _activeSoldierList[i].transform.DOLocalMove(_desiredPosition, _data.TravelDuration);
             }
         }
     }

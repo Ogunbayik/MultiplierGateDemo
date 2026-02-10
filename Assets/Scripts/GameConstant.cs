@@ -21,4 +21,8 @@ public static class GameConstant
     {
         public const float GATE_DESTROY_TIME = 0.1f;
     }
+    public class Setting
+    {
+        public const int MINIMUM_SOLDIER_COUNT = 1;
+    }
 }
