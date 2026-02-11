@@ -21,8 +21,13 @@ public static class GameConstant
     {
         public const float GATE_DESTROY_TIME = 0.1f;
     }
-    public class Setting
+    public class PlayerSettings
     {
         public const int MINIMUM_SOLDIER_COUNT = 1;
+    }
+    public class GatePartTypes
+    {
+        public const string GATE_PILLAR = "Pillar";
+        public const string GATE_PANEL = "Panel";
     }
 }

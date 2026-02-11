@@ -92,7 +92,7 @@ public class PlayerSquadManager : MonoBehaviour
                 break;
         }
 
-        return Mathf.Clamp(result, GameConstant.Setting.MINIMUM_SOLDIER_COUNT, _maxSoldierCount);
+        return Mathf.Clamp(result, GameConstant.PlayerSettings.MINIMUM_SOLDIER_COUNT, _maxSoldierCount);
     }
     private void ResetSquadList()
     {
