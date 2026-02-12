@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6657884052695105782}
   - component: {fileID: 2454242333756412875}
   - component: {fileID: 3504198674606533170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SoldierVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 3672158962828210615}
   - component: {fileID: 7447338050302261860}
   - component: {fileID: 8038739041829038543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Soldier
   m_TagString: Player
   m_Icon: {fileID: 0}
