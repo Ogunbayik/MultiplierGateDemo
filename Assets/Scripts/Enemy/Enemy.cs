@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolable<IMemoryPool>
         if (_currentHealth <= 0)
             Die();
     }        
-    private void Die()
+    public void Die()
     {
         _currentHealth = 0;
         _isDead = true;

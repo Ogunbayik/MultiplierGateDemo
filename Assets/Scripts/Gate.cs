@@ -26,6 +26,7 @@ public class Gate : MonoBehaviour, IDamageable
     [SerializeField] private GateType _type;
     [SerializeField] private int _initialValue;
     [SerializeField] private int _maxValue;
+    [SerializeField] private float _movementSpeed;
     [Header("Pillar Colors")]
     [SerializeField] private Color _pillarIncreaseColor;
     [SerializeField] private Color _pillarDecreaseColor;
@@ -60,6 +61,10 @@ public class Gate : MonoBehaviour, IDamageable
         CanIncrease = (value) => value < _maxValue;
         SetGateColor();
         _gateUI.UpdateValueText(_currentValue);
+    }
+    private void Update()
+    {
+        transform.Translate(Vector3.back * _movementSpeed * Time.deltaTime);
     }
     private void OnTriggerEnter(Collider other)
     {

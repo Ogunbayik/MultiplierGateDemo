@@ -7,5 +7,6 @@ public class SignalInstaller : MonoInstaller
     {
         SignalBusInstaller.Install(Container);
         Container.DeclareSignal<GameSignal.PlayerTriggeredGateSignal>();
+        Container.DeclareSignal<GameSignal.SoldierDeadSignal>();
     }
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba1d5db7abcca34db937538ada3b6a6, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  _movementSpeed: 5
+  _movementSpeed: 3
   _minXConstraint: -5
   _maxXConstraint: 5
   _minZConstraint: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   _bulletSpeed: 5
   _bulletLifeTime: 2
   _fireRate: 0.5
-  _reloadTime: 2
+  _reloadTime: 3.5
   _frontRowSpacing: 1.4
   _backRowSpacingEven: 0.75
   _travelDuration: 1

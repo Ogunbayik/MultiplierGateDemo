@@ -22,6 +22,7 @@ public class PlayerSquadManager : MonoBehaviour
 
     private Vector3 _desiredPosition;
 
+    public List<Soldier> ActiveSoldiers => _activeSoldierList;
 
     [Inject]
     public void Construct(Soldier.Pool soldierPool,PlayerDataSO data, SignalBus signalBus)
@@ -30,7 +31,6 @@ public class PlayerSquadManager : MonoBehaviour
         _data = data;
         _signalBus = signalBus;
     }
-
     private void Start() => InitialSquad();
     private void InitialSquad()
     {
@@ -45,23 +45,31 @@ public class PlayerSquadManager : MonoBehaviour
     private void OnEnable()
     {
         _signalBus.Subscribe<GameSignal.PlayerTriggeredGateSignal>(OnPlayerTriggerGate);
+        _signalBus.Subscribe<GameSignal.SoldierDeadSignal>(OnSoldierDead);
     }
     private void OnDisable()
     {
         _signalBus.Unsubscribe<GameSignal.PlayerTriggeredGateSignal>(OnPlayerTriggerGate);
+        _signalBus.Unsubscribe<GameSignal.SoldierDeadSignal>(OnSoldierDead);
     }
     private void OnPlayerTriggerGate(GameSignal.PlayerTriggeredGateSignal signal) => UpdateSoldierSequence(signal).Forget();
+    private void OnSoldierDead(GameSignal.SoldierDeadSignal signal)
+    {
+        _activeSoldierList.Remove(signal.DeadSoldier);
+
+        RelocateSoldiers();
+    }
     private async UniTaskVoid UpdateSoldierSequence(GameSignal.PlayerTriggeredGateSignal signal)
     {
         CancellationToken token = this.GetCancellationTokenOnDestroy();
-        //Ýlk önce duman efekti eklenecek..
+        //TODO Duman efekti eklenecek..
         Debug.Log("Smoke effect is activated!.. Effect time is 0.5f");
         await UniTask.Delay(2000, cancellationToken: token);
-        //Sonra asker sayýsý hesaplanacak..
+
         var targetCount = CalculateValue(signal.Gate.Type, signal.Gate.CurrentValue);
         UpdateSoldierCount(targetCount);
         await UniTask.Delay(2000, cancellationToken: token);
-        //En sonda da formasyon deðiþecek..
+        
         RelocateSoldiers();
     }
     private void UpdateSoldierCount(int targetAmount)

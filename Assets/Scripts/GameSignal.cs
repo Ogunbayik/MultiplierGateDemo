@@ -11,4 +11,10 @@ public static class GameSignal
         public PlayerTriggeredGateSignal(Gate gate) => Gate = gate;
     }
 
+    public class SoldierDeadSignal
+    {
+        public Soldier DeadSoldier;
+        public SoldierDeadSignal(Soldier deadSoldier) => DeadSoldier = deadSoldier;
+    }
+
 }

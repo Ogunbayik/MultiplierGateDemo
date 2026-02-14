@@ -33,14 +33,27 @@ public static class GameConstant
     }
     public class EnemyAnimation
     {
-        private const string DieKey = "isDead";
-        private const string RunKey = "isRun";
+        private const string DIE_KEY = "isDead";
+        private const string RUN_KEY = "isRun";
 
-        public static readonly int IsDeadHash = Animator.StringToHash(DieKey);
-        public static readonly int IsRunHash = Animator.StringToHash(RunKey);
+        public static readonly int IS_DEAD_HASH = Animator.StringToHash(DIE_KEY);
+        public static readonly int IS_RUN_HASH = Animator.StringToHash(RUN_KEY);
 
         public const float SinkWaitDuration = 2.0f;
         public const float SinkMoveDuration = 4.0f;
         public const float SinkDepth = -1.5f;
+    }
+    public class SoldierAnimation
+    {
+        public const string MOVEMENT_KEY = "MovementSpeed";
+        public const string BLEND_MOVE_X = "MoveX";
+        public const string BLEND_MOVE_Y = "MoveY";
+        public const string DIE_KEY = "Die";
+        public const string FIRE_KEY = "Fire";
+        public const string RELOAD_KEY = "Reload";
+
+        public const float ReloadWaitDuration = 3.5f;
+        public const float AttackWaitDuration = 0.4f;
+        public const float DieWaitDuration = 3.5f;
     }
 }

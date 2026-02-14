@@ -30,8 +30,8 @@ public class EnemyAnimationController : MonoBehaviour
     }
     private void Vision_OnPlayerDetected(Transform target) => PlayRunAnimation();
     private void Enemy_OnEnemyDead() => DieSequence();
-    private void PlayRunAnimation() => _animator.SetTrigger(GameConstant.EnemyAnimation.IsRunHash);
-    private void PlayDeadAnimation() => _animator.SetTrigger(GameConstant.EnemyAnimation.IsDeadHash);
+    private void PlayRunAnimation() => _animator.SetTrigger(GameConstant.EnemyAnimation.IS_RUN_HASH);
+    private void PlayDeadAnimation() => _animator.SetTrigger(GameConstant.EnemyAnimation.IS_DEAD_HASH);
     private void DieSequence()
     {
         Sequence dieSequence = DOTween.Sequence();
